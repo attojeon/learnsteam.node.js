@@ -27,3 +27,5 @@ build/Release
 node_modules
 
 sftp-config.json
+
+process_ans.js
