@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>센서 데이터 입력 화면</title>
+</head>
+<body>
+<script>
+function myFunc() {
+    var sensor_name = document.getElementById("txt_name").value;
+    var sensor_value = document.getElementById("txt_value").value;
+
+    alert (sensor_name + " : " + sensor_value);
+}
+// Call the function here
+</script>
+	<h1>센서 데이터 업로드</h1>
+	<h2>아래의 빈 칸에 타입을 맞추어서 입력하고 보내기 버튼을 누르세요!!!</h2>
+	<div class='frm_main'>
+		<form method="get" id="frmSender" action="getdata.html">
+			<table>
+				<tr>
+					<td>센서이름 : </td>
+					<td> <input type="text" name="sensor_name"  id="txt_name"/></td>
+				</tr>
+				<tr>
+					<td>데이터 값 : </td>
+					<td><input type="text" name="sensor_value"  id="txt_value"/></td>
+				</tr>
+			</table>
+			<button onclick="myFunc()">보내기</button>
+		</form>
+	</div>
+</body>
+</html>
